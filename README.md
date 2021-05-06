@@ -1,2 +1,2 @@
 # Automating-The-Dino
-## End to end automation of the Chrome's Dino Game
+## End to end automation of Chrome's Dino Game
