@@ -6,9 +6,13 @@ image = ImageGrab.grab().convert('L')
 data = image.load()
 dataBird = image.load()
 
-for i in range(700,900):
-    for j in range(150,300):
-        data[i,j] = 255
+for i in range(550,650):
+    for j in range(500,563):
+        data[i,j] = 110
+
+for i in range(550,650):
+        for j in range(563,650):
+            data[i,j] = 0
         
 image.show()
      

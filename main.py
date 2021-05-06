@@ -8,9 +8,9 @@ def hit(key):
 
 # run when the screen is white
 def CollisionWhiteScreen(data):
-     # collsion with the birds
+     # collision with the birds
     for i in range(550,650):
-        for j in range(410,563):
+        for j in range(500,563):
             # if value of color less than 100 then consider it black!
             if (data[i,j]) < 100: 
                 hit("down")
@@ -28,10 +28,10 @@ def CollisionWhiteScreen(data):
     return
 
 # run when the screen turns dim
-def CollsionBlackScreen(data):
-    # collsion with the birds
+def CollisionBlackScreen(data):
+    # collision with the birds
     for i in range(550,650):
-        for j in range(410,563):
+        for j in range(500,563):
             # if value of color greater than 100 then consider it white!
             if (data[i,j]) > 100:  
                 hit("down")
@@ -68,7 +68,7 @@ if __name__ == '__main__':
         data = image.load()
 
         if CheckScreenColor(data):
-            CollsionBlackScreen(data)
+            CollisionBlackScreen(data)
         else:
             CollisionWhiteScreen(data)
         
