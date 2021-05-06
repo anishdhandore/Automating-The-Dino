@@ -11,7 +11,8 @@ def CollisionWhiteScreen(data):
      # collsion with the birds
     for i in range(550,650):
         for j in range(410,563):
-            if (data[i,j]) < 100:   # if value of color less than 100 then consider it black!
+            # if value of color less than 100 then consider it black!
+            if (data[i,j]) < 100: 
                 hit("down")
                 time.sleep(0.5)
                 pyautogui.keyUp("down")
@@ -20,7 +21,8 @@ def CollisionWhiteScreen(data):
     # collision with the cactus
     for i in range(550,650):
         for j in range(563,650):
-            if (data[i,j]) < 100:   # if value of color less than 100 then consider it black!
+            # if value of color less than 100 then consider it black!
+            if (data[i,j]) < 100:  
                 hit("up")
                 return
     return
